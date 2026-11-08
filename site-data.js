@@ -28,9 +28,13 @@ window.SITE_DATA = {
      (time, venue, description and link are all optional)
   */
   events: [
+    { title: "Guest Lecture: Real-World Renewable Energy Systems and Their Integration into Buildings",
+      date: "2026-11-05", time: "18:00",
+      venue: "University of Cyprus, Lecture Theatre POL10-B101 \u201cAndreas Alexandrou\u201d",
+      description: "Professor Andreas K. Athienitis, Professor of Building Engineering, Concordia University, Canada. Open to students, researchers and industry professionals. Organised by the University of Cyprus Department of Mechanical and Manufacturing Engineering and the ETSD programme, and supported by ASHRAE Cyprus Chapter and the Cyprus Student Branch." },
     { title: "Technical Event with Keynote Speaker ASHRAE President Sarah E. Maston, P.E., BCxP, LEED AP BD+C",
-      date: "2027-05-04",
-      description: "Other speakers to be announced soon." },
+      date: "2027-05-08",
+      description: "Other speakers and venue to be announced soon." },
   ],
 
   /* ---------------- BOARD OF GOVERNORS ----------------
