@@ -16,7 +16,7 @@
 window.SITE_DATA = {
 
   /* Chapter contact email. Leave "" to hide it everywhere. */
-  email: "ashraecy@gmail.com",
+  email: "info@ashraecyprus.org",
 
   /* ---------------- EVENTS ----------------
      Future events appear under "Upcoming Events". Past events move to
