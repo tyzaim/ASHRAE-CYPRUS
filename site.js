@@ -42,6 +42,7 @@
     info.appendChild(el("h3", "", ev.title));
     var meta = [ev.time, ev.venue].filter(Boolean).join(" · ");
     if (meta) info.appendChild(el("p", "ev-meta", meta));
+    if (ev.description) info.appendChild(el("p", "ev-desc", ev.description));
     var link = safeUrl(ev.link);
     if (link) {
       var a = el("a", "more", "Details and registration →");

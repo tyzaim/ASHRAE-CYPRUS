@@ -23,9 +23,14 @@ window.SITE_DATA = {
      "Past Events" automatically.
      Example (remove the // to use it):
      { title: "Webinar on ventilation standards", date: "2027-02-18", time: "18:30",
-       venue: "Nicosia, venue name", link: "https://example.com/register" },
+       venue: "Nicosia, venue name", description: "Optional extra line.",
+       link: "https://example.com/register" },
+     (time, venue, description and link are all optional)
   */
   events: [
+    { title: "Technical Event with Keynote Speaker ASHRAE President Sarah E. Maston, P.E., BCxP, LEED AP BD+C",
+      date: "2027-05-04",
+      description: "Other speakers to be announced soon." },
   ],
 
   /* ---------------- BOARD OF GOVERNORS ----------------
