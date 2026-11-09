@@ -156,3 +156,13 @@ a.media-item{color:inherit;transition:.2s}a.media-item:hover{border-color:var(--
 .panel.center p{margin:0 0 8px}
 @media(max-width:620px){.logo img{height:60px}.topbar .wrap{flex-wrap:wrap;gap:4px 14px}}
 footer.site a.btn,footer.site a.btn:hover{color:#0b2a12}
+
+.topbar-right{display:flex;align-items:center;gap:16px}
+.ico{width:1.1em;height:1.1em;fill:currentColor;flex:none}
+.social.top{display:inline-flex;align-items:center;color:#fff}
+.social.top .ico{width:18px;height:18px}.social.top .lbl{position:absolute;left:-9999px}
+.social.top:hover{color:var(--green)}
+.follow{display:flex;gap:10px;flex-wrap:wrap}
+footer.site a.btn-social{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid rgba(255,255,255,.35);border-radius:4px;color:#fff;font:600 .85rem var(--font-head)}
+footer.site a.btn-social .ico{width:18px;height:18px}
+footer.site a.btn-social:hover{background:var(--green);border-color:var(--green);color:#0b2a12}

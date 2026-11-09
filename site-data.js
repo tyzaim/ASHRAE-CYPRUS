@@ -18,6 +18,12 @@ window.SITE_DATA = {
   /* Chapter contact email. Leave "" to hide it everywhere. */
   email: "info@ashraecyprus.org",
 
+  /* Social media pages. Leave "" to hide a button. */
+  social: {
+    linkedin: "https://www.linkedin.com/company/ashrae-cyprus-chapter/home/",
+    facebook: "https://www.facebook.com/constantinoszzeniou"
+  },
+
   /* ---------------- EVENTS ----------------
      Future events appear under "Upcoming Events". Past events move to
      "Past Events" automatically.

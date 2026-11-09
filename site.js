@@ -153,6 +153,13 @@
       if (mails[j].tagName === "A") mails[j].href = "mailto:" + D.email;
     } else { mails[j].hidden = true; }
   }
+  var soc = D.social || {};
+  var socials = document.querySelectorAll("[data-social]");
+  for (var s = 0; s < socials.length; s++) {
+    var u = safeUrl(soc[socials[s].getAttribute("data-social")]);
+    if (u) { socials[s].href = u; socials[s].hidden = false; }
+  }
+
   var layout = document.querySelectorAll("[data-chair-layout]");
   for (var k = 0; k < layout.length; k++) {
     var side = layout[k].querySelector("[data-render=chair]");
