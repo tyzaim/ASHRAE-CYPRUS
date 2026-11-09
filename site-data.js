@@ -1,8 +1,8 @@
 /* =====================================================================
    ASHRAE CYPRUS CHAPTER - SITE CONTENT
    Edit this one file to update the website. Open it in Notepad (or any
-   plain text editor), change it, save it, then save the change on GitHub (see
-   HOW-TO-UPDATE.txt). The site updates by itself.
+   plain text editor), change it, save it, then upload the whole folder
+   to Netlify again.
 
    RULES
    - Keep the quote marks "like this" and the commas between entries.
@@ -60,19 +60,15 @@ window.SITE_DATA = {
 
   /* ---------------- COMMITTEE CHAIRS ----------------
      Use the page name on the left. Example:
-     "student-activities": { name: "Full Name", photo: "photos/full-name.jpg" },
+     "student-activities": { name: "Full Name", photo: "", email: "" },
      Names you can use: student-activities, membership-promotion,
      young-engineers-in-ashrae-yea, research-promotion,
      chapter-technology-transfer, government-affairs
   */
   chairs: {
-    "student-activities": { name: "Constantinos Zeniou", photo: "photos/constantinos-zeniou.jpg" },
-    "membership-promotion": { name: "Zacharias Hadjigeorgiou", photo: "photos/zacharias-hadjigeorgiou.jpg" },
-    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg" },
-    "research-promotion": { name: "Nicholas Zachopoulos", photo: "photos/nicholas-zachopoulos.jpg" },
-    "chapter-technology-transfer": { name: "Polyvios Eleftheriou", photo: "photos/polyvios-eleftheriou.jpg" },
-    "government-affairs": { name: "Ierotheos Syrigos", photo: "photos/ierotheos-syrigos.jpg" },
+    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
   },
+
   /* ---------------- PAST PRESIDENTS ----------------
      Newest first. Example: { name: "Full Name", years: "2024-2025", photo: "photos/full-name.jpg" },
      (years and photo are optional)

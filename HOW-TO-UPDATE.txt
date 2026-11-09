@@ -1,37 +1,33 @@
 ASHRAE CYPRUS CHAPTER WEBSITE - HOW TO UPDATE
 ==============================================
-(GitHub + Cloudflare Pages)
 
-HOW IT WORKS
-Your files live in a GitHub repository. Cloudflare Pages watches it and
-republishes the site automatically, usually within a minute or two, each
-time you save a change on GitHub. index.html must be at the top level of
-the repository.
+PUBLISHING FOR THE FIRST TIME (Netlify)
+1. Unzip this package so you have a folder with index.html inside it.
+2. Log in at netlify.com, go to Projects / Sites, and drag the whole folder
+   onto the "Deploy manually" / drag-and-drop area.
+3. Open the Netlify link it gives you and check every page.
 
-CHANGING CONTENT
+CONTACT FORM
+After the first deploy, in Netlify open your project > Forms. Under
+"Form notifications" add an email notification so messages reach the
+chapter inbox. (The form is called "contact".)
+
+ADDING OR CHANGING CONTENT
 All content that changes lives in ONE file: site-data.js
-1. On GitHub, open site-data.js and click the pencil (Edit) icon.
-2. Change the text. Instructions and examples are at the top of each section.
-   Keep the quote marks "like this" and the commas.
-3. Click "Commit changes". The site updates by itself.
-Events move to "Past Events" automatically by date.
-
-PHOTOS AND SPONSOR LOGOS
-Open the "photos" (or "sponsors") folder on GitHub, then
-Add file > Upload files. File names are case-sensitive: use exactly the
-names listed in photos/README.txt (for example tamer-zaim.jpg).
-
-CONTACT
-The Contact page shows the chapter email address as a link. There is no
-form to maintain. Change the address in site-data.js (email: "...").
-
-CHAPTER EMAIL ADDRESSES
-The role addresses (president@, secretary@ and so on) only work if mail
-to them is delivered somewhere. If the domain is managed in Cloudflare,
-its Email Routing feature can forward each address to a person's real
-inbox. Set this up in the Cloudflare dashboard under the domain's Email
-settings.
+- Open it in Notepad or any plain-text editor (not Word).
+- It has instructions and examples at the top of each section.
+- Events: add one line per event. Past events move to "Past Events"
+  automatically by date.
+- Board, committee chairs, past presidents, media and sponsors work the same way.
+- Photos go in the "photos" folder, sponsor logos in the "sponsors" folder.
+- Save the file, then drag the WHOLE folder onto Netlify's Deploys page again.
+  The site updates within a minute.
 
 IF SOMETHING BREAKS
 Undo your last change in site-data.js (most problems are a missing comma
-or quote mark). GitHub keeps the history, so you can always go back.
+or quote mark). A broken single entry is skipped, but a missing bracket
+can hide a whole section.
+
+CHAPTER EMAIL
+Set email: "..." at the top of site-data.js and it appears in the header
+bar, footer and contact page. Leave it empty to hide it.

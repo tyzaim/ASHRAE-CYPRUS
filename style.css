@@ -169,9 +169,3 @@ footer.site a.btn-social:hover{background:var(--green);border-color:var(--green)
 
 .people{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 24px}
 .people .person{flex:0 1 250px;min-width:0}
-
-.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
-.form-status{margin-top:14px;font-weight:600;color:var(--navy)}
-.form-status a{font-weight:700}
-
-.btn-lg{font-size:1.05rem;padding:16px 34px;text-transform:none;letter-spacing:.02em}
