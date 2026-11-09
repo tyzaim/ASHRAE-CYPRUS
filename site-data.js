@@ -51,6 +51,11 @@ window.SITE_DATA = {
   */
   boardYear: "2026-2027",
   board: [
+    { name: "Tamer Zaim", role: "President", photo: "photos/tamer-zaim.jpg", email: "president@ashraecyprus.org" },
+    { name: "Polyvios Eleftheriou", role: "Vice President", photo: "photos/polyvios-eleftheriou.jpg", email: "vicepresident@ashraecyprus.org" },
+    { name: "Constantinos Zeniou", role: "Secretary", photo: "photos/constantinos-zeniou.jpg", email: "secretary@ashraecyprus.org" },
+    { name: "Nicholas Zachopoulos", role: "Treasurer", photo: "photos/nicholas-zachopoulos.jpg", email: "treasurer@ashraecyprus.org" },
+    { name: "Maria Andreou", role: "Young Engineers in ASHRAE (YEA)", photo: "photos/maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
   ],
 
   /* ---------------- COMMITTEE CHAIRS ----------------
@@ -61,12 +66,16 @@ window.SITE_DATA = {
      chapter-technology-transfer, government-affairs
   */
   chairs: {
+    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
   },
 
   /* ---------------- PAST PRESIDENTS ----------------
-     Example: { years: "2024-2025", name: "Full Name" },
+     Newest first. Example: { name: "Full Name", years: "2024-2025", photo: "photos/full-name.jpg" },
+     (years and photo are optional)
   */
   presidents: [
+    { name: "Ierotheos Syrigos", years: "2025-2026", photo: "photos/ierotheos-syrigos.jpg" },
+    { name: "Polyvios Eleftheriou", years: "2024-2025", photo: "photos/polyvios-eleftheriou.jpg" },
   ],
 
   /* ---------------- MEDIA (videos and recordings) ----------------

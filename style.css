@@ -166,3 +166,6 @@ footer.site a.btn,footer.site a.btn:hover{color:#0b2a12}
 footer.site a.btn-social{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid rgba(255,255,255,.35);border-radius:4px;color:#fff;font:600 .85rem var(--font-head)}
 footer.site a.btn-social .ico{width:18px;height:18px}
 footer.site a.btn-social:hover{background:var(--green);border-color:var(--green);color:#0b2a12}
+
+.people{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 24px}
+.people .person{flex:0 1 250px;min-width:0}

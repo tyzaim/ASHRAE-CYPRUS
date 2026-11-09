@@ -71,7 +71,7 @@
     "board": function (host) {
       var list = D.board || [];
       if (!list.length) return empty(host, "The Board of Governors will be announced here soon.");
-      var grid = el("div", "grid g4");
+      var grid = el("div", "people");
       each(list, function (p) {
         var c = el("div", "person");
         c.appendChild(avatar(p));
@@ -86,14 +86,15 @@
     "presidents": function (host) {
       var list = D.presidents || [];
       if (!list.length) return empty(host, "The list of past presidents will be added here.");
-      var wrap = el("div", "table-wrap"), t = el("table");
-      var head = el("tr"); head.appendChild(el("th", "", "Year")); head.appendChild(el("th", "", "President"));
-      var thead = el("thead"); thead.appendChild(head); t.appendChild(thead);
-      var body = el("tbody");
+      var grid = el("div", "people");
       each(list, function (p) {
-        var tr = el("tr"); tr.appendChild(el("td", "", p.years)); tr.appendChild(el("td", "", p.name)); body.appendChild(tr);
+        var c = el("div", "person");
+        c.appendChild(avatar(p));
+        c.appendChild(el("h3", "", p.name));
+        c.appendChild(el("h4", "", p.years ? "President " + p.years : "Past President"));
+        grid.appendChild(c);
       });
-      t.appendChild(body); wrap.appendChild(t); host.appendChild(wrap);
+      host.appendChild(grid);
     },
     "media": function (host) {
       var list = D.media || [];
