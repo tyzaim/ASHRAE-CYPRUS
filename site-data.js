@@ -60,15 +60,19 @@ window.SITE_DATA = {
 
   /* ---------------- COMMITTEE CHAIRS ----------------
      Use the page name on the left. Example:
-     "student-activities": { name: "Full Name", photo: "", email: "" },
+     "student-activities": { name: "Full Name", photo: "photos/full-name.jpg" },
      Names you can use: student-activities, membership-promotion,
      young-engineers-in-ashrae-yea, research-promotion,
      chapter-technology-transfer, government-affairs
   */
   chairs: {
-    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
+    "student-activities": { name: "Constantinos Zeniou", photo: "photos/constantinos-zeniou.jpg" },
+    "membership-promotion": { name: "Zacharias Hadjigeorgiou", photo: "photos/zacharias-hadjigeorgiou.jpg" },
+    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg" },
+    "research-promotion": { name: "Nicholas Zachopoulos", photo: "photos/nicholas-zachopoulos.jpg" },
+    "chapter-technology-transfer": { name: "Polyvios Eleftheriou", photo: "photos/polyvios-eleftheriou.jpg" },
+    "government-affairs": { name: "Ierotheos Syrigos", photo: "photos/ierotheos-syrigos.jpg" },
   },
-
   /* ---------------- PAST PRESIDENTS ----------------
      Newest first. Example: { name: "Full Name", years: "2024-2025", photo: "photos/full-name.jpg" },
      (years and photo are optional)
