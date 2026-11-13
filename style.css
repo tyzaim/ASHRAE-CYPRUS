@@ -156,6 +156,7 @@ a.media-item{color:inherit;transition:.2s}a.media-item:hover{border-color:var(--
 .panel.center p{margin:0 0 8px}
 @media(max-width:620px){.logo img{height:60px}.topbar .wrap{flex-wrap:wrap;gap:4px 14px}}
 footer.site a.btn,footer.site a.btn:hover{color:#0b2a12}
+.ev-desc{margin:0 0 6px}
 
 .topbar-right{display:flex;align-items:center;gap:16px}
 .ico{width:1.1em;height:1.1em;fill:currentColor;flex:none}
@@ -169,3 +170,12 @@ footer.site a.btn-social:hover{background:var(--green);border-color:var(--green)
 
 .people{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 24px}
 .people .person{flex:0 1 250px;min-width:0}
+
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.form-status{margin-top:14px;font-weight:600;color:var(--navy)}
+.form-status a{font-weight:700}
+
+.btn-lg{font-size:1.05rem;padding:16px 34px;text-transform:none;letter-spacing:.02em}
+
+.avatar{position:relative}
+.avatar-img{position:absolute;inset:0}

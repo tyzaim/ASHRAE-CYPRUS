@@ -128,11 +128,12 @@
         });
         tier.appendChild(slots); host.appendChild(tier);
       });
-      if (any) { var sec = document.getElementById("sponsors-section"); if (sec) sec.hidden = false; }
+      var sec = document.getElementById("sponsors-section"); if (sec) sec.hidden = !any;
     },
     "chair": function (host) {
       var c = (D.chairs || {})[host.getAttribute("data-slug")];
       if (!c || !c.name) { host.hidden = true; return; }
+      host.hidden = false;
       host.appendChild(avatar(c));
       host.appendChild(el("h3", "", c.name));
       host.appendChild(el("p", "", host.getAttribute("data-title")));
@@ -143,7 +144,10 @@
   var nodes = document.querySelectorAll("[data-render]");
   for (var i = 0; i < nodes.length; i++) {
     var fn = R[nodes[i].getAttribute("data-render")];
-    if (fn) { try { fn(nodes[i]); } catch (e) { /* ignore */ } }
+    if (fn) {
+      var saved = nodes[i].innerHTML;
+      try { nodes[i].textContent = ""; fn(nodes[i]); } catch (e) { nodes[i].innerHTML = saved; }
+    }
   }
 
   var mails = document.querySelectorAll("[data-email]");
@@ -158,12 +162,12 @@
   var socials = document.querySelectorAll("[data-social]");
   for (var s = 0; s < socials.length; s++) {
     var u = safeUrl(soc[socials[s].getAttribute("data-social")]);
-    if (u) { socials[s].href = u; socials[s].hidden = false; }
+    if (u) { socials[s].href = u; socials[s].hidden = false; } else { socials[s].hidden = true; }
   }
 
   var layout = document.querySelectorAll("[data-chair-layout]");
   for (var k = 0; k < layout.length; k++) {
     var side = layout[k].querySelector("[data-render=chair]");
-    if (side && side.hidden) layout[k].classList.add("single");
+    if (side) layout[k].classList.toggle("single", side.hidden);
   }
 })();

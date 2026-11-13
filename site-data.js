@@ -1,8 +1,8 @@
 /* =====================================================================
    ASHRAE CYPRUS CHAPTER - SITE CONTENT
    Edit this one file to update the website. Open it in Notepad (or any
-   plain text editor), change it, save it, then upload the whole folder
-   to Netlify again.
+   plain text editor), change it, save it, then save the change on GitHub (see
+   HOW-TO-UPDATE.txt). The site updates by itself.
 
    RULES
    - Keep the quote marks "like this" and the commas between entries.
