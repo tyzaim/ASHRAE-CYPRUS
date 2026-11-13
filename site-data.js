@@ -45,41 +45,41 @@ window.SITE_DATA = {
 
   /* ---------------- BOARD OF GOVERNORS ----------------
      year: the term shown above the board.
-     photo: optional, a file placed in the "photos" folder, e.g. "photos/maria.jpg".
+     photo: optional, the name of a photo file uploaded next to the other site files, e.g. "maria.jpg".
      Example:
-     { name: "Full Name", role: "President", photo: "photos/full-name.jpg", email: "" },
+     { name: "Full Name", role: "President", photo: "full-name.jpg", email: "" },
   */
   boardYear: "2026-2027",
   board: [
-    { name: "Tamer Zaim", role: "President", photo: "photos/tamer-zaim.jpg", email: "president@ashraecyprus.org" },
-    { name: "Polyvios Eleftheriou", role: "Vice President", photo: "photos/polyvios-eleftheriou.jpg", email: "vicepresident@ashraecyprus.org" },
-    { name: "Constantinos Zeniou", role: "Secretary", photo: "photos/constantinos-zeniou.jpg", email: "secretary@ashraecyprus.org" },
-    { name: "Nicholas Zachopoulos", role: "Treasurer", photo: "photos/nicholas-zachopoulos.jpg", email: "treasurer@ashraecyprus.org" },
-    { name: "Maria Andreou", role: "Young Engineers in ASHRAE (YEA)", photo: "photos/maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
+    { name: "Tamer Zaim", role: "President", photo: "tamer-zaim.jpg", email: "president@ashraecyprus.org" },
+    { name: "Polyvios Eleftheriou", role: "Vice President", photo: "polyvios-eleftheriou.jpg", email: "vicepresident@ashraecyprus.org" },
+    { name: "Constantinos Zeniou", role: "Secretary", photo: "constantinos-zeniou.jpg", email: "secretary@ashraecyprus.org" },
+    { name: "Nicholas Zachopoulos", role: "Treasurer", photo: "nicholas-zachopoulos.jpg", email: "treasurer@ashraecyprus.org" },
+    { name: "Maria Andreou", role: "Young Engineers in ASHRAE (YEA)", photo: "maria-andreou.jpg", email: "youngengineers@ashraecyprus.org" },
   ],
 
   /* ---------------- COMMITTEE CHAIRS ----------------
      Use the page name on the left. Example:
-     "student-activities": { name: "Full Name", photo: "photos/full-name.jpg" },
+     "student-activities": { name: "Full Name", photo: "full-name.jpg" },
      Names you can use: student-activities, membership-promotion,
      young-engineers-in-ashrae-yea, research-promotion,
      chapter-technology-transfer, government-affairs
   */
   chairs: {
-    "student-activities": { name: "Constantinos Zeniou", photo: "photos/constantinos-zeniou.jpg" },
-    "membership-promotion": { name: "Zacharias Hadjigeorgiou", photo: "photos/zacharias-hadjigeorgiou.jpg" },
-    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "photos/maria-andreou.jpg" },
-    "research-promotion": { name: "Nicholas Zachopoulos", photo: "photos/nicholas-zachopoulos.jpg" },
-    "chapter-technology-transfer": { name: "Polyvios Eleftheriou", photo: "photos/polyvios-eleftheriou.jpg" },
-    "government-affairs": { name: "Ierotheos Syrigos", photo: "photos/ierotheos-syrigos.jpg" },
+    "student-activities": { name: "Constantinos Zeniou", photo: "constantinos-zeniou.jpg" },
+    "membership-promotion": { name: "Zacharias Hadjigeorgiou", photo: "zacharias-hadjigeorgiou.jpg" },
+    "young-engineers-in-ashrae-yea": { name: "Maria Andreou", photo: "maria-andreou.jpg" },
+    "research-promotion": { name: "Nicholas Zachopoulos", photo: "nicholas-zachopoulos.jpg" },
+    "chapter-technology-transfer": { name: "Polyvios Eleftheriou", photo: "polyvios-eleftheriou.jpg" },
+    "government-affairs": { name: "Ierotheos Syrigos", photo: "ierotheos-syrigos.jpg" },
   },
   /* ---------------- PAST PRESIDENTS ----------------
-     Newest first. Example: { name: "Full Name", years: "2024-2025", photo: "photos/full-name.jpg" },
+     Newest first. Example: { name: "Full Name", years: "2024-2025", photo: "full-name.jpg" },
      (years and photo are optional)
   */
   presidents: [
-    { name: "Ierotheos Syrigos", years: "2025-2026", photo: "photos/ierotheos-syrigos.jpg" },
-    { name: "Polyvios Eleftheriou", years: "2024-2025", photo: "photos/polyvios-eleftheriou.jpg" },
+    { name: "Ierotheos Syrigos", years: "2025-2026", photo: "ierotheos-syrigos.jpg" },
+    { name: "Polyvios Eleftheriou", years: "2024-2025", photo: "polyvios-eleftheriou.jpg" },
   ],
 
   /* ---------------- MEDIA (videos and recordings) ----------------
@@ -91,8 +91,8 @@ window.SITE_DATA = {
   ],
 
   /* ---------------- SPONSORS ----------------
-     Three tiers. Put each logo file in the "sponsors" folder.
-     Example: { name: "Company", logo: "sponsors/company.png", url: "https://company.com" },
+     Three tiers. Upload each logo file next to the other site files.
+     Example: { name: "Company", logo: "company.png", url: "https://company.com" },
      If every tier is empty the sponsors section is hidden.
   */
   sponsors: {

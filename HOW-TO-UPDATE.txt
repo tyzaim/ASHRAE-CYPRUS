@@ -17,9 +17,17 @@ All content that changes lives in ONE file: site-data.js
 Events move to "Past Events" automatically by date.
 
 PHOTOS AND SPONSOR LOGOS
-Open the "photos" (or "sponsors") folder on GitHub, then
-Add file > Upload files. File names are case-sensitive: use exactly the
-names listed in photos/README.txt (for example tamer-zaim.jpg).
+There are no folders. Upload the photo or logo file to GitHub together
+with the other site files (Add file > Upload files). File names are
+case-sensitive, so use exactly these names for people:
+  tamer-zaim.jpg            polyvios-eleftheriou.jpg
+  constantinos-zeniou.jpg   nicholas-zachopoulos.jpg
+  maria-andreou.jpg         ierotheos-syrigos.jpg
+  zacharias-hadjigeorgiou.jpg
+Square or portrait photos work best (cropped to a circle, face centred).
+Until a photo is uploaded, the person's initials are shown instead.
+For a sponsor logo, upload the file, then add its name in site-data.js,
+for example: logo: "company.png".
 
 CONTACT
 The Contact page shows the chapter email address as a link. There is no
